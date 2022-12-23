@@ -1,0 +1,121 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --Very-dark-blackish-blue-50: hsl(219, 29%, 14% ,50%);
+    --Very-dark-blackish-blue-70: hsl(219, 29%, 14% ,70%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    --Light-grayish-blue-opacity-50: hsl(210, 46%, 95% ,50%);
+    --Light-grayish-blue-opacity-70: hsl(210, 46%, 95% ,70%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* main{
+    display: flex;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--Light-grayish-blue);
+}
+.head img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.danial{
+    background-color: var(--Moderate-violet);
+    border-radius: 8px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 1%;
+}
+@media (max-width:767px) {
+    .danial,.patreck,.jhonasan,.janet.kira{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+h4{
+    font-weight: 600;
+}
+.head p{
+    color: var(--Light-grayish-blue);
+}
+.head small{
+    color: var(--Light-grayish-blue-opacity-50);
+}
+.text-content h4{
+    color: var(--Light-grayish-blue);
+    font-size: 18px;
+}
+.text-content p{
+    color: var(--Light-grayish-blue-opacity-70);
+}
+
+.jhonasan{
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: 8px;
+
+}
+.janet{
+    background-color: white;
+    border-radius: 8px;
+
+}
+.janet .head p{
+    color: var(--Very-dark-blackish-blue);
+}
+.janet .head small{
+    color: var(--Very-dark-blackish-blue-50);
+}
+.janet .text-content h4{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 18px;
+}
+.janet .text-content p{
+    color: var(--Very-dark-blackish-blue-70);
+}
+.patreck{
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: 8px;
+}
+.kira{
+    background-color: white;
+    border-radius: 8px;
+    position:absolute;
+    right:100px;
+    top: 40px;
+}
+@media (max-width:767px) {
+    .kira{
+        position: relative;
+        right: 0;
+
+    }
+
+}
+.kira .head p{
+    color: var(--Very-dark-blackish-blue);
+}
+.kira .head small{
+    color: var(--Very-dark-blackish-blue-50);
+}
+.kira .text-content h4{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 18px;
+}
+.kira .text-content p{
+    color: var(--Very-dark-blackish-blue-70);
+    font-size: 13px;
+}
+p{
+    font-size: 13px;
+}
